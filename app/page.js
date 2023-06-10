@@ -5,6 +5,7 @@ export default function Home() {
       <h1 className='text-9xl'>Float Fashion</h1>
       <h1 className='text-9xl'>Float</h1>
       <h1 className='text-9xl'>Float</h1>
+      <h1 className='text-9xl'>Floathfghfgh</h1>
     </main>
   )
 }
