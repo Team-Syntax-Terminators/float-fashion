@@ -7,8 +7,17 @@ const Terms = () => {
             <Head>
                 <title>Terms & Condition | Float Fashion</title>
             </Head>
+            <Hero/>
         </>
     );
 };
 
 export default Terms;
+
+const Hero = () => {
+    return (
+        <>
+            <p>terms</p>
+        </>
+    )
+}

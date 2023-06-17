@@ -34,7 +34,7 @@ const TopNav = () => {
         <li role="menuitem" className="flex items-center">
           <button className="flex items-center">
             <FormControl sx={{ m: 1, minWidth: 80 }} size="small">
-              <InputLabel id="demo-select-small-label bg-white mr-2"><FaLanguage className="text-2xl"/></InputLabel>
+              <InputLabel id="demo-select-small-label bg-white mr-2"><FaLanguage className="text-2xl" /></InputLabel>
               <Select
                 labelId="demo-select-small-label"
                 id="demo-select-small"
@@ -75,7 +75,7 @@ const TopNav = () => {
 const BottomNav = () => {
   return (
     <>
-      <div className=" bg-black px-6 md:px-12 lg:px-7">
+      <div className=" bg-gray-800 px-6 md:px-12 lg:px-7">
         <div className="container m-auto flex flex-wrap items-center justify-between py-6 gap-6 md:py-4 md:gap-0 relative">
           <input type="checkbox" name="toggle_nav" id="toggle_nav" className="peer hidden" />
           <div className="w-full flex justify-between items-center md:w-max md:px-0">
@@ -98,7 +98,7 @@ const BottomNav = () => {
           <div className="flex z-50 flex-col md:flex-row justify-between 
                     items-center gap-y-4 p-6 bg-black md:w-8/12 
                     md:gap-y-4 md:p-0 
-                    md:bg-transparent lg:w-7/12 fixed top-0 -left-full transition-all duration-500 peer-checked:left-0 max-w-sm h-full 
+                    md:bg-transparent lg:w-8/12 fixed top-0 -left-full transition-all duration-500 peer-checked:left-0 max-w-sm h-full 
                     md:left-0 md:h-auto w-4/5 md:max-w-none md:relative lg:first-letter:top-0">
             <div className="flex md:hidden w-full pb-5">
               <Link href="/" aria-label="logo">
@@ -119,7 +119,31 @@ const BottomNav = () => {
                   <div className="block md:px-3 group">
                     <div className="relative text-white cursor-pointer
                                                     before:absolute before:-inset-2 before:w-full before:h-0.5 before:origin-left before:mx-auto before:mt-auto before:rounded-full ">
-                      <span className="transition group-hover:text-orange-700">Category</span>
+                      <span className="transition group-hover:text-orange-700">Men</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="block md:px-3 group">
+                    <div className="relative text-white cursor-pointer
+                                                    before:absolute before:-inset-2 before:w-full before:h-0.5 before:origin-left before:mx-auto before:mt-auto before:rounded-full ">
+                      <span className="transition group-hover:text-orange-700">Women</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="block md:px-3 group">
+                    <div className="relative text-white cursor-pointer
+                                                    before:absolute before:-inset-2 before:w-full before:h-0.5 before:origin-left before:mx-auto before:mt-auto before:rounded-full ">
+                      <span className="transition group-hover:text-orange-700">Kids</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="block md:px-3 group">
+                    <div className="relative text-white cursor-pointer
+                                                    before:absolute before:-inset-2 before:w-full before:h-0.5 before:origin-left before:mx-auto before:mt-auto before:rounded-full ">
+                      <span className="transition group-hover:text-orange-700">Accessories</span>
                     </div>
                   </div>
                 </li>
