@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 // icons
@@ -18,17 +19,17 @@ const page = () => {
             </div>
 
             <div className="flex items-center justify-center mt-6">
-              <a
-                href="#"
-                className="w-1/3 pb-4 font-medium text-center text-gray-500 capitalize border-b dark:border-gray-400 dark:text-gray-300">
+              <Link
+                href="/login"
+                className="w-1/3 pb-4 font-medium text-center text-gray-500 capitalize border-b">
                 sign in
-              </a>
+              </Link>
 
-              <a
-                href="#"
+              <Link
+                href="/register"
                 className="w-1/3 pb-4 font-medium text-center text-gray-800 capitalize border-b-2 border-orange-500">
                 sign up
-              </a>
+              </Link>
             </div>
 
             <div className="relative flex items-center mt-8">
@@ -51,7 +52,7 @@ const page = () => {
               <input
                 type="email"
                 className="block w-full py-3 text-gray-700 bg-white border rounded-lg px-11 focus:border-orange-400 focus:ring-orange-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                placeholder="Email a address"
+                placeholder="Email address"
               />
             </div>
 
@@ -74,9 +75,9 @@ const page = () => {
 
               <p class="mt-4 text-center text-gray-600">or sign in with</p>
 
-              <a
-                href="#"
-                class="flex items-center justify-center px-6 py-3 mt-4 text-gray-600 transition-colors duration-300 transform border rounded-lg hover:bg-gray-50">
+              <button
+                type="button"
+                class="flex items-center w-full justify-center px-6 py-3 mt-4 text-gray-600 transition-colors duration-300 transform border rounded-lg hover:bg-gray-50">
                 <svg
                   class="w-6 h-6 mx-2"
                   viewBox="0 0 40 40">
@@ -98,15 +99,15 @@ const page = () => {
                   />
                 </svg>
 
-                <span class="mx-2">Sign in with Google</span>
-              </a>
+                <span class="mx-2">Sign up with Google</span>
+              </button>
 
               <div className="mt-6 text-center ">
-                <a
-                  href="#"
+                <Link
+                  href="/login"
                   className="text-sm text-orange-500 hover:underline">
                   Already have an account?
-                </a>
+                </Link>
               </div>
             </div>
           </form>
