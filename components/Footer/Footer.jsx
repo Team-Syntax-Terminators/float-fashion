@@ -18,27 +18,25 @@ const Footer = () => {
         <div class="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
           <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
-              <div class="flex justify-center text-orange-600 sm:justify-start">
-                <img
-                  className="w-40"
-                  src="./assets/logo/logo-02.png"
-                  alt="float fashion"
-                />
-              </div>
+              <img
+                className="w-40"
+                src="./assets/logo/logo-02.png"
+                alt="float fashion"
+              />
 
-              <p class="mt-6 max-w-md text-center leading-relaxed text-white sm:max-w-xs sm:text-left">
+              <p class="mt-6 max-w-md leading-relaxed text-white sm:max-w-xs text-left">
                 Fashion Float provides users with a convenient and stylish way
                 to shop for clothes.
               </p>
 
-              <ul class="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
+              <ul class="mt-4 flex gap-6 md:gap-8">
                 {sociolLinks.map((e, i) => (
                   <li key={i}>
                     <a
                       href="/"
                       rel="noreferrer"
                       target="_blank"
-                      class="text-orange-700 transition hover:text-orange-700/75">
+                      class="text-white transition hover:text-orange-700/75">
                       <span class="sr-only">{e.name}</span>
                       {e.icon}
                     </a>
@@ -51,14 +49,14 @@ const Footer = () => {
               {links.map((e, i) => (
                 <div
                   key={i}
-                  class="text-center sm:text-left">
+                  class="text-left">
                   <p class="text-lg font-semibold text-white">{e.name}</p>
 
-                  <ul class="mt-8 space-y-4 text-sm">
+                  <ul class="mt-4 space-y-4 text-sm">
                     {e.links.map((e, i) => (
                       <li key={i}>
                         <a
-                          class="text-white transition hover:text-orange-700/75"
+                          class="text-gray-300 transition hover:text-orange-700/75"
                           href="/">
                           {e.name}
                         </a>
@@ -68,29 +66,29 @@ const Footer = () => {
                 </div>
               ))}
 
-              <div class="text-center sm:text-left">
+              <div class="text-left">
                 <p class="text-lg font-semibold text-white">Helpful Links</p>
 
-                <ul class="mt-8 space-y-4 text-sm">
+                <ul class="mt-4 space-y-4 text-sm">
                   <li>
                     <a
-                      class="text-white transition hover:text-orange-700/75"
+                      class="text-gray-300 transition hover:text-orange-700/75"
                       href="/">
                       FAQs
                     </a>
                   </li>
                   <li>
                     <a
-                      class="text-white transition hover:text-orange-700/75"
+                      class="text-gray-300 transition hover:text-orange-700/75"
                       href="/">
                       Support
                     </a>
                   </li>
                   <li>
                     <a
-                      class="group flex justify-center sm:justify-start gap-1.5"
+                      class="group flex gap-1.5"
                       href="/">
-                      <span class="text-white transition group-hover:text-orange-700/75">
+                      <span class="text-gray-300 transition group-hover:text-orange-700/75">
                         Live Chat
                       </span>
 
@@ -103,17 +101,17 @@ const Footer = () => {
                 </ul>
               </div>
 
-              <div class="text-center sm:text-left">
+              <div class="text-left">
                 <p class="text-lg font-semibold text-white">Contact Us</p>
 
-                <ul class="mt-8 space-y-4 text-sm">
+                <ul class="mt-4 space-y-4 text-sm">
                   {contactUs.map((e, i) => (
                     <li key={i}>
                       <a
-                        class="flex items-center justify-center gap-1.5 text-white"
+                        class="flex gap-1.5 text-gray-300"
                         href="/">
                         {e.icon}
-                        <span class="flex-1 text-white">{e.name}</span>
+                        <span class="flex-1 text-gray-300">{e.name}</span>
                       </a>
                     </li>
                   ))}
@@ -123,7 +121,7 @@ const Footer = () => {
           </div>
 
           <div class="mt-12 border-t border-gray-100 pt-6">
-            <div class="text-center sm:flex sm:justify-between sm:text-left">
+            <div class="sm:flex sm:justify-between text-left">
               <p class="text-sm text-white space-x-2 space-y-2">
                 <span class="block sm:inline">All rights reserved.</span>
 
