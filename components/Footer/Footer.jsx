@@ -10,6 +10,7 @@ import {
 } from "react-icons/bs";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { MdOutlineLocationOn } from "react-icons/md";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -36,7 +37,7 @@ const Footer = () => {
                       href="/"
                       rel="noreferrer"
                       target="_blank"
-                      className="text-white transition hover:text-orange-700/75">
+                      className="text-white transition hover:text-orange-500">
                       <span className="sr-only">{e.name}</span>
                       {e.icon}
                     </a>
@@ -56,7 +57,7 @@ const Footer = () => {
                     {e.links.map((e, i) => (
                       <li key={i}>
                         <a
-                          className="text-gray-300 transition hover:text-orange-700/75"
+                          className="text-gray-300 transition hover:text-orange-500"
                           href="/">
                           {e.name}
                         </a>
@@ -74,14 +75,14 @@ const Footer = () => {
                 <ul className="mt-4 space-y-4 text-sm">
                   <li>
                     <a
-                      className="text-gray-300 transition hover:text-orange-700/75"
+                      className="text-gray-300 transition hover:text-orange-500"
                       href="/">
                       FAQs
                     </a>
                   </li>
                   <li>
                     <a
-                      className="text-gray-300 transition hover:text-orange-700/75"
+                      className="text-gray-300 transition hover:text-orange-500"
                       href="/">
                       Support
                     </a>
@@ -90,7 +91,7 @@ const Footer = () => {
                     <a
                       className="group flex gap-1.5"
                       href="/">
-                      <span className="text-gray-300 transition group-hover:text-orange-700/75">
+                      <span className="text-gray-300 transition group-hover:text-orange-500">
                         Live Chat
                       </span>
 
@@ -127,17 +128,17 @@ const Footer = () => {
               <p className="text-sm text-white space-x-2 space-y-2">
                 <span className="block sm:inline">All rights reserved.</span>
 
-                <a
-                  className="inline-block text-orange-600 underline transition hover:text-orange-600/75"
-                  href="/">
+                <Link
+                  href="/"
+                  className="inline-block text-orange-500 transition hover:text-orange-700">
                   Terms & Conditions
-                </a>
+                </Link>
 
                 <span>&middot;</span>
 
                 <a
-                  className="inline-block text-orange-600 underline transition hover:text-orange-600/75"
-                  href="/">
+                  href="/"
+                  className="inline-block text-orange-500 transition hover:text-orange-700">
                   Privacy Policy
                 </a>
               </p>
