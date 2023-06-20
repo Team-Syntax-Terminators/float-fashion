@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
+import '../../styles/fashion/_terms.scss'
 
 const Terms = () => {
     return (
@@ -17,7 +18,9 @@ export default Terms;
 const Hero = () => {
     return (
         <>
-            <p>terms</p>
+            <div id="terms">
+                <h1>terms and condition</h1>
+            </div>
         </>
     )
 }
