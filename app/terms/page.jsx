@@ -12,7 +12,6 @@ const Terms = () => {
         </>
     );
 };
-
 export default Terms;
 
 const Hero = () => {
