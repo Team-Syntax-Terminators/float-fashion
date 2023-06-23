@@ -1,10 +1,8 @@
-"use client"
-
 import Head from 'next/head';
 import React from 'react';
 import '../../styles/fashion/_terms.scss'
 import Link from 'next/link';
-import Lottie from 'react-lottie-player';
+import CTA from '@/components/Cta/cta';
 
 const Terms = () => {
     return (
@@ -14,7 +12,7 @@ const Terms = () => {
             </Head>
             <Hero />
             <Details />
-            <CTA />
+            <CTA/>
         </>
     );
 };
@@ -239,36 +237,6 @@ const Details = () => {
                     </div>
                 </div>
             </section>
-        </>
-    )
-}
-const CTA = () => {
-    return (
-        <>
-            <section id="download-2">
-                <div className="bg-scroll bg-inner division">
-                    <section id="Cta">
-                        <div className="text-center">
-                            <h2 className="text-white pb-3">Need assistance?</h2>
-                            <p className="text-white">If you have any questions or concerns regarding these terms and conditions, please contact us.</p>
-                            <div className="displayBtn">
-                                <div className="my-3">
-                                    <Link href="/faq">
-                                        <button type="button" className="btn text-white text-center">Go to FAQ</button>
-                                    </Link>
-                                </div>
-                                <div className="my-3">
-                                    <Link href="/contact">
-                                        <button type="button" className="btn text-white">Contact Now</button>
-                                    </Link>
-                                </div>
-                            </div>
-
-                        </div>
-                    </section>
-                </div>
-            </section>
-
         </>
     )
 }
