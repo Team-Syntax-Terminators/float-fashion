@@ -30,7 +30,7 @@ const TopNav = () => {
   return (
     <section
       id="topNav"
-      className="bg-white container mx-auto my-2 flex gap-2">
+      className="bg-white mx-auto max-w-screen-xl my-2 flex gap-2">
       <ul className="justify-start items-center hidden md:flex gap-5">
         <li
           role="menuitem"
@@ -97,7 +97,7 @@ const BottomNav = () => {
   return (
     <>
       <div className=" bg-gray-800 px-6 md:px-12 lg:px-7">
-        <div className="container m-auto flex flex-wrap items-center justify-between py-6 gap-6 md:py-4 md:gap-0 relative">
+        <div className="mx-auto max-w-screen-xl flex flex-wrap items-center justify-between py-6 gap-6 md:py-4 md:gap-0 relative">
           <input
             type="checkbox"
             name="toggle_nav"
