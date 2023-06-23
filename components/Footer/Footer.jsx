@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 // icons
 import {
@@ -10,13 +11,12 @@ import {
 } from "react-icons/bs";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { MdOutlineLocationOn } from "react-icons/md";
-import Link from "next/link";
 
 const Footer = () => {
   return (
     <div>
       <footer className="bg-gray-800">
-        <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
+        <div className="mx-auto max-w-screen-xl px-4 py-8 md:px-8 lg:py-16">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
               <img
@@ -37,7 +37,7 @@ const Footer = () => {
                       href="/"
                       rel="noreferrer"
                       target="_blank"
-                      className="text-white transition hover:text-orange-500">
+                      className="text-white transition hover:text-orange-600">
                       <span className="sr-only">{e.name}</span>
                       {e.icon}
                     </a>
@@ -123,18 +123,20 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="mt-12 border-t border-gray-100 pt-6">
+          <div className="py-4 mt-4 border-t border-gray-100">
             <div className="sm:flex sm:justify-between text-left">
-              <p className="text-sm text-white space-x-2 space-y-2">
-                <span className="block sm:inline">All rights reserved.</span>
+              <p className="text-sm text-white">
+                <span className="block sm:inline pr-2">
+                  All rights reserved.
+                </span>
 
                 <Link
                   href="/"
-                  className="inline-block text-orange-500 transition hover:text-orange-700">
+                  className="inline-block text-orange-500 transition hover:text-orange-700 py-2">
                   Terms & Conditions
                 </Link>
 
-                <span>&middot;</span>
+                <span className="px-2">&middot;</span>
 
                 <a
                   href="/"
@@ -143,7 +145,7 @@ const Footer = () => {
                 </a>
               </p>
 
-              <p className="mt-4 text-sm text-white sm:order-first sm:mt-0">
+              <p className="text-sm text-white sm:order-first">
                 &copy; 2024 Float Fashion
               </p>
             </div>
