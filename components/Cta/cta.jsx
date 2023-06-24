@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import '../../styles/fashion/_cta.scss'
+import '../../styles/fashion/_globalCta.scss'
 const CTA = () => {
     return (
         <>
