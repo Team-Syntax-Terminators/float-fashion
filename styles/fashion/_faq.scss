@@ -1,0 +1,13 @@
+#faq {
+  background-image: url('/assets/banner/intersect.svg');
+  background-repeat: no-repeat;
+  background-position: top;
+  @media screen and (max-width: 767px) {
+    background-image: none;
+  }
+  & .workflowsection {
+    .shadow {
+      min-height: 500px;
+    }
+  }
+}
