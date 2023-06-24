@@ -1,5 +1,5 @@
 #faq {
-  background-image: url('/assets/banner/intersect.svg');
+  background-image: url("/assets/banner/intersect.svg");
   background-repeat: no-repeat;
   background-position: top;
   @media screen and (max-width: 767px) {
@@ -9,5 +9,28 @@
     .shadow {
       min-height: 500px;
     }
+  }
+}
+#accord {
+  & .customfaqlist {
+    & .Mui-expanded {
+      margin: 0 !important;
+      & h6 {
+        color: #ffffff;
+      }
+      & .css-i4bv87-MuiSvgIcon-root {
+        color: #fafafa;
+      }
+    }
+    & .Mui-expanded:before {
+      opacity: 1 !important;
+    }
+  }
+  & .css-yw020d-MuiAccordionSummary-expandIconWrapper.Mui-expanded {
+    transform: rotate(45deg) !important;
+  }
+  & .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded{
+    background-color: #e9581e;
+    color: #ffffff;
   }
 }
