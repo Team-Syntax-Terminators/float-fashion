@@ -31,6 +31,7 @@
   }
   & .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded {
     background-color: #e9581e;
+    border-bottom: 2px solid rgb(10, 51, 236);
     color: #ffffff;
   }
 }
@@ -73,9 +74,9 @@
   }
   & .nav-tabs .nav-item .nav-item.show .nav-link,
   .nav-tabs .nav-link.active {
-    background-color: rgb(82, 27, 209);
+    background-color: #e9581e;
     color: #ffffff;
-    border-bottom: 1px solid red;
+    border-bottom: 2px solid rgb(10, 51, 236);
   }
   & .btn:not(:disabled):not(.disabled) {
     cursor: pointer;
