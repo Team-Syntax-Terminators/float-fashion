@@ -1,5 +1,4 @@
 import React from "react";
-import "../../styles/fashion/_cta.scss";
 
 const CallToAction = () => {
   return (
