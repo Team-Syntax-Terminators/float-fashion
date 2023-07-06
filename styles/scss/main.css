@@ -1,0 +1,291 @@
+#container {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 2rem;
+  padding-inline: 1rem;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+#content h1 span {
+  color: orangered;
+}
+#content p {
+  font-size: 1.5rem;
+  color: gray;
+}
+#content button {
+  width: 100%;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  border-radius: 0.5rem;
+}
+#content button:nth-of-type(1) {
+  background-color: orangered;
+  color: white;
+}
+#content button:nth-of-type(2) {
+  color: black;
+  border: 1px solid orangered;
+}
+#content button:nth-of-type(2):hover {
+  color: white;
+  transition: ease 0.5s;
+  background-color: orangered;
+}
+
+#faq {
+  background-image: url("/assets/banner/intersect.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+@media screen and (max-width: 1023px) {
+  #faq {
+    background-image: none;
+  }
+}
+#faq .workflowsection .shadow {
+  min-height: 500px;
+}
+
+#accord .customfaqlist .Mui-expanded {
+  margin: 0 !important;
+}
+#accord .customfaqlist .Mui-expanded h6 {
+  color: #ffffff;
+}
+#accord .customfaqlist .Mui-expanded .css-i4bv87-MuiSvgIcon-root {
+  color: #fafafa;
+}
+#accord .customfaqlist .Mui-expanded:before {
+  opacity: 1 !important;
+}
+#accord .css-yw020d-MuiAccordionSummary-expandIconWrapper.Mui-expanded {
+  transform: rotate(45deg) !important;
+}
+#accord .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded {
+  background-color: #e9581e;
+  border-bottom: 2px solid rgb(10, 51, 236);
+  color: #ffffff;
+}
+
+#faqbtn ul.nav.nav-tabs li a {
+  padding: 10px;
+}
+@media screen and (min-width: 1024px) {
+  #faqbtn .nav-item {
+    width: 100%;
+  }
+}
+#faqbtn .nav {
+  display: inline-flex;
+  justify-content: center;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style: none;
+}
+@media screen and (min-width: 1024px) {
+  #faqbtn .nav {
+    flex-direction: column;
+  }
+}
+#faqbtn .btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+#faqbtn li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+#faqbtn .nav-tabs .nav-item .nav-item.show .nav-link,
+#faqbtn .nav-tabs .nav-link.active {
+  background-color: #e9581e;
+  color: #ffffff;
+  border-bottom: 2px solid rgb(10, 51, 236);
+}
+#faqbtn .btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+#Cta {
+  padding: 70px 0;
+}
+#Cta h2 {
+  font-size: 1.5rem;
+  line-height: 32px;
+}
+@media (min-width: 1200px) {
+  #Cta h2 {
+    font-size: 2rem;
+  }
+}
+#Cta p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#Cta button {
+  border: 1px solid white;
+  padding: 10px 30px;
+  margin: 0 10px;
+  width: 200px;
+}
+@media screen and (min-width: 768px) {
+  #Cta .displayBtn {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+#download-2 .bg-inner {
+  background-image: url("https://st.depositphotos.com/3230977/4235/i/450/depositphotos_42354059-stock-photo-man-with-suit-and-watch.jpg");
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.616);
+  position: relative;
+  z-index: 1;
+}
+#download-2 .bg-scroll {
+  width: 100%;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#privacy {
+  height: 300px;
+  background: url("/assets/banner/privacyBg.png");
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+#privacy h1 {
+  color: #fff;
+  z-index: 1;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 600;
+}
+@media screen and (max-width: 450px) {
+  #privacy h1 {
+    text-align: center;
+    font-size: 26px;
+  }
+}
+#privacy p {
+  color: #fff;
+}
+@media screen and (max-width: 450px) {
+  #privacy p {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+#cards .card {
+  background-color: #f0f0f0;
+  margin: 10px;
+}
+#cards .card h1 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.466);
+  width: 40%;
+}
+@media screen and (max-width: 767px) {
+  #cards .card h1 {
+    width: 100%;
+  }
+}
+
+#terms {
+  height: 300px;
+  background: url("/assets/banner/terms-condition-banner.jpg");
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+#terms h1 {
+  color: #fff;
+  z-index: 1;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 600;
+}
+@media screen and (max-width: 450px) {
+  #terms h1 {
+    text-align: center;
+    font-size: 26px;
+  }
+}
+#terms p {
+  color: #fff;
+}
+@media screen and (max-width: 450px) {
+  #terms p {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+#details h1 {
+  color: rgb(231, 96, 17);
+  font-size: 18px;
+}
+#details p,
+#details span,
+#details li,
+#details li p {
+  font-family: "Source Sans Pro", "Arial", sans-serif;
+  color: black;
+}
+#details .privacy-box {
+  background-color: #f1fafd;
+  border: 2px solid rgb(231, 96, 17);
+  padding: 25px;
+  width: 600px;
+}
+@media only screen and (max-width: 650px) {
+  #details .privacy-box {
+    width: 420px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #details .privacy-box {
+    padding: 10px 12px;
+    width: 310px;
+  }
+}
+#details .privacy-box .nav-link {
+  padding: 3px 0;
+  font-size: 15px;
+  color: rgb(182, 67, 0);
+}
+#details .ml-5,
+#details .mx-5 {
+  margin-left: 3rem !important;
+}
+#details li {
+  list-style: square;
+  color: #7e7e7e;
+}/*# sourceMappingURL=main.css.map */

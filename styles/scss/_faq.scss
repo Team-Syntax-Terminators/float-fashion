@@ -1,0 +1,84 @@
+#faq {
+  background-image: url("/assets/banner/intersect.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  @media screen and (max-width: 1023px) {
+    background-image: none;
+  }
+  & .workflowsection {
+    .shadow {
+      min-height: 500px;
+    }
+  }
+}
+#accord {
+  & .customfaqlist {
+    & .Mui-expanded {
+      margin: 0 !important;
+      & h6 {
+        color: #ffffff;
+      }
+      & .css-i4bv87-MuiSvgIcon-root {
+        color: #fafafa;
+      }
+    }
+    & .Mui-expanded:before {
+      opacity: 1 !important;
+    }
+  }
+  & .css-yw020d-MuiAccordionSummary-expandIconWrapper.Mui-expanded {
+    transform: rotate(45deg) !important;
+  }
+  & .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded {
+    background-color: #e9581e;
+    border-bottom: 2px solid rgb(10, 51, 236);
+    color: #ffffff;
+  }
+}
+#faqbtn {
+  & ul.nav.nav-tabs li a {
+    padding: 10px;
+  }
+  & .nav-item {
+    @media screen and (min-width: 1024px) {
+      width: 100%;
+    }
+  }
+  & .nav {
+    display: inline-flex;
+    justify-content: center;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style: none;
+    @media screen and (min-width: 1024px) {
+      flex-direction: column;
+    }
+  }
+  & .btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  & li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+  }
+  & .nav-tabs .nav-item .nav-item.show .nav-link,
+  .nav-tabs .nav-link.active {
+    background-color: #e9581e;
+    color: #ffffff;
+    border-bottom: 2px solid rgb(10, 51, 236);
+  }
+  & .btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+}
