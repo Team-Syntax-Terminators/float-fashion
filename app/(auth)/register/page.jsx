@@ -1,21 +1,45 @@
 "use client";
 
+import { signIn, useSession } from "next-auth/react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 import { useForm } from "react-hook-form";
 
 // icons
 import { AiOutlineUser, AiOutlineLock, AiOutlineMail } from "react-icons/ai";
 
-const page = () => {
+const Register = () => {
+  const session = useSession();
+  console.log(session);
+
   const {
     handleSubmit,
     register,
     formState: { errors },
   } = useForm();
 
-  const handleAuth = (data) => {
-    console.log(data);
+  const handleAuth = async (data) => {
+    const { name, email, password } = data;
+
+    const router = useRouter();
+
+    try {
+      const res = await fetch("/api/auth/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          password,
+        }),
+      });
+      res.status === 201 && router.push("/");
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -119,6 +143,7 @@ const page = () => {
               <p className="mt-4 text-center text-gray-600">or sign in with</p>
 
               <button
+                onClick={() => signIn("google")}
                 type="button"
                 className="flex items-center w-full justify-center px-6 py-3 mt-4 text-gray-600 transition-colors duration-300 transform border rounded-lg hover:bg-gray-50">
                 <svg
@@ -160,4 +185,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Register;
