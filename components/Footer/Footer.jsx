@@ -145,7 +145,7 @@ const Footer = () => {
                 </a>
               </p>
 
-              <p className="text-sm text-white sm:order-first">
+              <p className="text-sm py-2 text-white sm:order-first">
                 &copy; 2024 Float Fashion
               </p>
             </div>
