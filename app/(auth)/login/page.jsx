@@ -1,5 +1,6 @@
 "use client";
 
+import { signIn } from "next-auth/react";
 import Link from "next/link";
 import React from "react";
 import { useForm } from "react-hook-form";
@@ -7,7 +8,7 @@ import { useForm } from "react-hook-form";
 // icons
 import { AiOutlineLock, AiOutlineMail } from "react-icons/ai";
 
-const page = () => {
+const Login = () => {
   const {
     handleSubmit,
     register,
@@ -93,12 +94,13 @@ const page = () => {
 
             <div className="mt-6">
               <button className="w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-orange-500 rounded-lg hover:bg-orange-400 focus:outline-none focus:ring focus:ring-orange-300 focus:ring-opacity-50">
-                Sign Up
+                Sign In
               </button>
 
               <p className="mt-4 text-center text-gray-600">or sign in with</p>
 
               <button
+                onClick={() => signIn("google")}
                 type="button"
                 className="flex items-center w-full justify-center px-6 py-3 mt-4 text-gray-600 transition-colors duration-300 transform border rounded-lg hover:bg-gray-50">
                 <svg
@@ -140,4 +142,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Login;
