@@ -1,6 +1,6 @@
 "use client";
 
-import { saveUser } from "@/utils/api/user";
+import { createUser } from "@/utils/api/user";
 import { signIn } from "next-auth/react";
 import Link from "next/link";
 import React from "react";
@@ -25,7 +25,7 @@ const Register = () => {
       password,
     };
 
-    saveUser(userData);
+    createUser(userData);
   };
 
   return (
@@ -57,7 +57,7 @@ const Register = () => {
               </div>
 
               <div className="relative flex items-center mt-8">
-                <span className="absolute text-gray-300 px-2">
+                <span className="absolute px-2 text-gray-300">
                   <AiOutlineUser size={"1.5rem"} />
                 </span>
 
@@ -75,7 +75,7 @@ const Register = () => {
               )}
 
               <div className="relative flex items-center mt-4">
-                <span className="absolute text-gray-300 px-2">
+                <span className="absolute px-2 text-gray-300">
                   <AiOutlineMail size={"1.5rem"} />
                 </span>
 
@@ -97,7 +97,7 @@ const Register = () => {
               )}
 
               <div className="relative flex items-center mt-4">
-                <span className="absolute text-gray-300 px-2">
+                <span className="absolute px-2 text-gray-300">
                   <AiOutlineLock size={"1.5rem"} />
                 </span>
 
@@ -122,7 +122,7 @@ const Register = () => {
 
               <button
                 type="submit"
-                className="w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-orange-500 rounded-lg hover:bg-orange-400 focus:outline-none focus:ring focus:ring-orange-300 focus:ring-opacity-50 mt-6">
+                className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-orange-500 rounded-lg hover:bg-orange-400 focus:outline-none focus:ring focus:ring-orange-300 focus:ring-opacity-50">
                 Sign Up
               </button>
             </form>
@@ -132,7 +132,7 @@ const Register = () => {
             <button
               onClick={() => signIn("google")}
               type="button"
-              className="flex items-center w-full justify-center px-6 py-3 mt-4 text-gray-600 transition-colors duration-300 transform border rounded-lg hover:bg-gray-50">
+              className="flex items-center justify-center w-full px-6 py-3 mt-4 text-gray-600 transition-colors duration-300 transform border rounded-lg hover:bg-gray-50">
               <svg
                 className="w-6 h-6 mx-2"
                 viewBox="0 0 40 40">

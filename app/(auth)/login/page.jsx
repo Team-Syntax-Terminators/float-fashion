@@ -1,5 +1,6 @@
 "use client";
 
+import { loginUser } from "@/utils/api/user";
 import { signIn } from "next-auth/react";
 import Link from "next/link";
 import React from "react";
@@ -16,7 +17,9 @@ const Login = () => {
   } = useForm();
 
   const handleAuth = (data) => {
-    console.log(data);
+    const { email, password } = data;
+    const userData = { email, password };
+    loginUser(userData);
   };
 
   return (
@@ -49,7 +52,7 @@ const Login = () => {
             </div>
 
             <div className="relative flex items-center mt-4">
-              <span className="absolute text-gray-300 px-2">
+              <span className="absolute px-2 text-gray-300">
                 <AiOutlineMail size={"1.5rem"} />
               </span>
 
@@ -71,7 +74,7 @@ const Login = () => {
             )}
 
             <div className="relative flex items-center mt-4">
-              <span className="absolute text-gray-300 px-2">
+              <span className="absolute px-2 text-gray-300">
                 <AiOutlineLock size={"1.5rem"} />
               </span>
 
@@ -102,7 +105,7 @@ const Login = () => {
               <button
                 onClick={() => signIn("google")}
                 type="button"
-                className="flex items-center w-full justify-center px-6 py-3 mt-4 text-gray-600 transition-colors duration-300 transform border rounded-lg hover:bg-gray-50">
+                className="flex items-center justify-center w-full px-6 py-3 mt-4 text-gray-600 transition-colors duration-300 transform border rounded-lg hover:bg-gray-50">
                 <svg
                   className="w-6 h-6 mx-2"
                   viewBox="0 0 40 40">
